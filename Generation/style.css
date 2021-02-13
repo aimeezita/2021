@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+/* CSS Genérico */
+header nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: rgb(13, 13, 114);
+  padding-left: 1vw;
+  color: white;
+  height: 5vh;
+  position: absolute;
+  top:0;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 1vw;
+}
+
+header nav ul li {
+  display: flex;
+  margin: 1vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  font-size: 3rem;
+}
+
+/* CSS da página Home */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  margin-top: 10vh;
+}
+
+main .main-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+main .main-home h1 {
+  display: flex;
+  font-size: 3rem;
+}
+
+main .main-home img {
+  display: flex;
+  max-width: 240px;
+}
+
+main .main-home .paragraph {
+  width: 50vw;
+  margin-bottom: 15vh;
+  text-align: justify;
+}
+
+/*CSS página  Contato*/
+
+main .main-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+main .main-contato form {
+  width: 50vw;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.main-contato form p {
+  text-align: center;
+}
+main .main-contato form label {
+  font-size: 2rem;
+}
+main .main-contato form input {
+  margin-bottom: 4vh;
+  margin-left: 1vw;
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 5vh;
+  width: 40vw;
+  font-size: 1.5rem;
+}
+
+main .main-contato form textarea {
+  height: 35vh;
+  width: 50vw;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+  text-align: center;
+  font-size: 18px;
+  padding: 4px;
+}
+
+form button {
+  background-color: rgb(13, 13, 114);
+  color: white;
+  margin-top: 10px;
+  padding: 6px;
+  height: 44px;
+  width: 120px;
+  font-size: 2rem;
+  border-radius: 6px;
+}
+
+/* Sobre */
+main section {
+  display: flex;
+  flex-direction: row;
+
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+main section .img {
+  /* background-image: url(img/aimeefoto.jpg);
+  background-repeat: no-repeat; */
+  display: flex;
+  width: 40vw;
+  background-size: contain;
+  overflow: hidden;
+  align-items: center;
+}
+
+main section .text {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+main section .text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: start;
+  width: 100%;
+}
+
+main section.text p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1366px) {
+  * {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1000px) {
+  main section.img {
+    display: none;
+  }
+
+ 
+}
