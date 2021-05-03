@@ -1,0 +1,223 @@
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.urna {
+  background-color: #dbd5c9;
+  padding: 30px;
+  display: flex;
+  width: 800px;
+  height: 400px;
+  justify-content: space-between;
+}
+
+section.tela {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 320px;
+  background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+  border: 5px solid rgb(177, 177, 177);
+  position: relative;
+  line-height: 1.2;
+}
+
+/* section.tela.tela-left{
+ width: 60%;
+} */
+
+.cabecalho,
+.cargo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cargo {
+  justify-content: center;
+}
+.numeros {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  
+}
+
+.numeros span {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  border: solid 1px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.pisca {
+  animation-name: pisca;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+}
+
+section.tela .tela-left {
+  width: 80%;
+  height: 270px;
+}
+
+section.tela .tela-right {
+  display: flex;
+  height: 240px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+figure{
+  background-color: white;
+  text-align: center;
+}
+
+section.tela .tela-right .foto-prefeito img {
+  width: 100px;
+  height: 100px;
+}
+
+section.tela .tela-right .foto-vice img {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+  
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.instrucoes {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+  border-top: solid black 2px;
+}
+
+/*Parte do teclado*/
+
+section.keyboard-side {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 35%;
+  height: 100%;
+  margin: 0;
+}
+
+.jEleitoral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  height: 10%;
+}
+
+.jEleitoral img {
+  width: 30px;
+}
+
+.jEleitoral span {
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+.teclado {
+  background-color: #403a3a;
+  width: 100%;
+  height: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.teclado-linha {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px 20px;
+}
+.teclado-botao {
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 rgba(169, 169, 169, 0.158);
+}
+
+.teclado-submit {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+.teclado-botao-especial {
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 rgba(169, 169, 169, 0.438);
+}
+
+#branco {
+  background-color: white;
+}
+#corrige {
+  background-color: rgb(243, 133, 31);
+}
+
+#confirma {
+  background-color: rgb(34, 207, 34);
+}
